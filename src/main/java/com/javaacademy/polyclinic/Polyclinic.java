@@ -5,8 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Поликлиника
@@ -42,7 +40,7 @@ public class Polyclinic {
     }
 
     //лечить
-    private void toHeal (Doctor doctor) {
+    private void toHeal(Doctor doctor) {
         BigDecimal money = doctor.toHeal();
         cashRegister.addIncome(money);
     }

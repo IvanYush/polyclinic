@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-import static java.math.BigDecimal.*;
+import static java.math.BigDecimal.ZERO;
 
 /**
  * Касса
@@ -16,7 +16,7 @@ public class CashRegister {
     private BigDecimal profit = ZERO; //доход
 
     //2.1 Умеет принимать платежи (т.е. увеличивать доход).
-    public void addIncome (BigDecimal money) {
+    public void addIncome(BigDecimal money) {
         profit = profit.add(money);
     }
 
